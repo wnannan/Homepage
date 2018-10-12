@@ -5,78 +5,33 @@
 	<head>
 
 		<meta charset="utf-8" />
-
 		<title>个人主页</title>
-
 		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
 	    <script type="text/javascript" src="js/jquery.min.js" ></script>
-
-	   <!-- <script type="text/javascript" src="js/two.min.js" ></script> -->
-
 	    <link rel="stylesheet" href="css/animate.css" />
-
 	    <link rel="stylesheet" href="css/jquery.fullPage.css" />
-
 	    <script type="text/javascript" src="js/jquery.fullPage.js" ></script>
-
   		<link rel="stylesheet" href="css/style.css" />
-
 	    <link rel="stylesheet" href="css/bootstrap.min.css" />
-
-	    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-	    <!-- 字体图标 -->
-	 	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
-
 	 	<!-- icon图标 -->
 	 	<link rel="stylesheet" type="text/css" href="./font/iconfont.css">
 	<style>
 		html,body{
-
 			margin: 0;
-
 			padding: 0;
-
 			border: none;
-
 			height: 100%;
-
 			width: 100%;
-
 		}
-
-
-
 		.main_page{
-
 			height: 100%;
-
 			min-height: 100%;
-
 			width: 100%;
-
 			position: relative;
-
 			overflow: hidden;
-
-			background: url(images/banner1.png)  no-repeat center center;	
-
-			/*background: url(images/banner2.png)  no-repeat center center;	
-
-			background: url(images/banner.png)  no-repeat center center;*/			
-
+			background: url(images/banner1.png)  no-repeat center center;
 			background-size: cover ;
-
-			/*animation: bganim  9s linear infinite;
-
-	-webkit-animation: bganim 9s linear infinite;
-
-	transition: all;
-
-	-webkit-transition: all;*/
-
 		}
-
 		.caption {
 			position: relative;
 		}
@@ -88,291 +43,144 @@
 			transition: all .5s;
 			opacity: 0;
 		}
-		
-
+		.slide h1 a,.slide h1 a:hover {
+			text-decoration: none;
+		}
+		#slide2 {
+			background: url(images/banner7.jpg) no-repeat;
+			background-size: cover;
+		}
+		#slide3 {
+			background: url(images/banner6.jpg) no-repeat;
+			background-size: cover;
+		}
 		@-webkit-keyframes bganim {
-
-  0% {
-
-    background: url(images/banner1.png)  no-repeat center center;	
-
-    background-size: cover ;
-
-  }
-
-
-
-   50% {
-
-   background: url(images/banner2.png)  no-repeat center center;	
-
-   background-size: cover ;
-
-  }
-
-
-
-  100% {
-
-    background: url(images/banner3.png)  no-repeat center center;
-
-    background-size: cover ;	
-
-  }
-
-}
-
-
-
-@keyframes bganim {
-
-  0% {
-
-    background: url(images/banner1.png)  no-repeat center center;
-
-    background-size: cover ;	
-
-  }
-
-
-
-   50% {
-
-   background: url(images/banner2.png)  no-repeat center center;
-
-   background-size: cover ;	
-
-  }
-
-
-
-  100% {
-
-    background: url(images/banner3.png)  no-repeat center center;	
-
-    background-size: cover ;
-
-  }
-
-}
-
+			0% {
+				background: url(images/banner1.png)  no-repeat center center;	
+				background-size: cover ;
+			}
+			50% {
+				background: url(images/banner2.png)  no-repeat center center;	
+				background-size: cover ;
+  			}
+			100% {
+    			background: url(images/banner3.png)  no-repeat center center;
+    			background-size: cover;	
+  			}
+		}
+		@keyframes bganim {
+			0% {
+				background: url(images/banner1.png)  no-repeat center center;
+				background-size: cover;
+			}
+			50% {
+				background: url(images/banner2.png)  no-repeat center center;
+	   			background-size: cover ;	
+			}
+			100% {
+	    		background: url(images/banner3.png)  no-repeat center center;
+	    		background-size: cover ;
+			}
+		}
 		.btn {
-
-    display: inline-block;
-
-    padding: 34px;
-
-    margin-bottom: 0;
-
-    font-size: 14px;
-
-    font-weight: 400;
-
-    line-height: 1;
-
-    text-align: center;
-
-    white-space: nowrap;
-
-    vertical-align: middle;
-
-    -ms-touch-action: manipulation;
-
-    touch-action: manipulation;
-
-    cursor: pointer;
-
-    -webkit-user-select: none;
-
-    -moz-user-select: none;
-
-    -ms-user-select: none;
-
-    user-select: none;
-
-    background-image: none;
-
-    border: 1px solid transparent;
-
-    /* border-radius: 4px; */
-
-}
-
-.btn-default{
-
-	border-radius: 0;
-
-	background: transparent;
-
-	border: 1px solid #FFFFFF;
-
-	color: #FFFFFF;
-
-}
-
-.btn-default:hover{
-
-	border-radius: 0;
-
-	background: transparent;
-
-	border: 1px solid #C9302C;
-
-	color: #C9302C;
-
-}
-
-#slide1{
-
-		background: url(images/banner2.png) no-repeat;
-
-		background-size: cover ;
-
-		
-
-	}
-
-	#slide2{
-
-		background: url(images/banner5.png) no-repeat ;
-
-		background-size: cover ;
-
-	
-
-	}
-
+		    display: inline-block;
+		    padding: 34px;
+		    margin-bottom: 0;
+		    font-size: 14px;
+		    font-weight: 400;
+		    line-height: 1;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    -ms-touch-action: manipulation;
+		    touch-action: manipulation;
+		    cursor: pointer;
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    background-image: none;
+		    border: 1px solid transparent;
+		}
+		.btn-default{
+			border-radius: 0;
+			background: transparent;
+			border: 1px solid #FFFFFF;
+			color: #FFFFFF;
+		}
+		.btn-default:hover{
+			border-radius: 0;
+			background: transparent;
+			border: 1px solid #C9302C;
+			color: #C9302C;
+		}
+		#slide1{
+			background: url(images/banner2.png) no-repeat;
+			background-size: cover ;
+		}
+		#slide2{
+			background: url(images/banner5.png) no-repeat ;
+			background-size: cover ;
+		}
 	</style>
-
 	</head>
-
 	<body>
-
-		
-
-	<section class="main_page" id="main_page">
-
-		<div class="container" style="top: 40%; position: relative;">
-
-			<h1 class="slideInRight animated_other">
-
-			
-
-				欢迎来到我的世界
-
-			</h1>
-
-	     <p class="slideInLeft animated_other">
-
-	我是王雅囡，来到这里，让你打开一个不一样的世界。这里有作品，有审美，有技术，满足你的好奇心！
-
-	     </p>
-
+		<section class="main_page" id="main_page">
+			<div class="container" style="top: 40%; position: relative;">
+				<h1 class="slideInRight animated_other">欢迎来到我的世界，我是王雅囡</h1>
+				<p class="slideInLeft animated_other">来到这里，让你打开一个不一样的世界。这里有作品，有审美，有技术，满足你的好奇心！</p>
+			</div>
+		<div id="menu" >
+			<svg class="menu_btn" >
+				<g id="menu_default"  onclick="change()">
+		    		<g stroke="#fff"  stroke-width="2" id="menu_close">
+		    			<path d='M 20 20 L 40 20 M 20 30 L 50 30 M 20 40 L 40 40'></path>
+		    		</g>
+		    	<g stroke="#fff"  stroke-width="2" id="menu_open">
+		    		<path d='M 20 20 L 40 40 M 40 20 L 20 40 '></path>
+		   		</g>
+		    	<rect x="0" y="0" width="80" height="80" stroke="none" class="myrect" fill="rgba(255,255,0,0)"></rect>
+				</g>
+			</svg>
 		</div>
-
-		<div id="menu" ><svg class="menu_btn" >
-
-		<g id="menu_default"  onclick="change()">
-
-	    <g stroke="#fff"  stroke-width="2" id="menu_close">
-
-	    <path d='M 20 20 L 40 20 M 20 30 L 50 30 M 20 40 L 40 40'></path>
-
-	    </g>
-
-	 
-
-	    <g stroke="#fff"  stroke-width="2" id="menu_open">
-
-	    <path d='M 20 20 L 40 40 M 40 20 L 20 40 '></path>
-
-	    </g>
-
-	    <rect x="0" y="0" width="80" height="80" stroke="none" class="myrect" fill="rgba(255,255,0,0)"></rect>
-
-		</g>
-
-	</svg>
-
-	</div>
-
-	
-
-
-
-	<section id="page1">
-
-		
-
+		<section id="page1">
 			<div id="fullpage">
-
-	<div class="section " id="section0">
-
-	
-
-		<div class="container fadeOutLeft animated_other">
-
-			<div class="row">
-
-				<div class="col-sm-4 col-md-4 row1" >
-
-    <div class="thumbnail" style="border: none; border-radius: 0;">
-
-      <img src="images/20180928174501.png" width="100%">
-
-      <div class="caption">
-
-        <h3>天气APP</h3>
-
-        <p style="color: #8C8C8C;">查看当地、全国天气信息</p>
-
-        <p><a href="https://wnannan.github.io/tenweather/index.html" target="_blank" class=" mybtn" role="" style="width: 80%;">查看详情</a> </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  
-
-	<div class="col-sm-4 col-md-4 row2" >
-
-    <div class="thumbnail" style="border: none; border-radius: 0;">
-
-      <img src="images/top.jpg" width="100%">
-
-      <div class="caption">
-
-        <h3>素馨花卉</h3>
-
-        <p style="color: #8C8C8C;">一个精致的花卉网站</p>
-
-        <p><a href="https://wnannan.github.io/suxinhuahui/" target="_blank" class=" mybtn" role="" style="width: 80%;">查看详情</a> </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-				
-
-				
-
-	<div class="col-sm-4 col-md-4 row3" >
-
-    <div class="thumbnail" style="border: none; border-radius: 0;">
-
-      <img src="images/pms_1472609961.95298675!220x220.jpg" width="100%">
-
-      <div class="caption">
-
-        <h3>小米首页</h3>
-
-        <p style="color: #8C8C8C;">小米商城首页</p>
-
-        <p><a href="https://wnannan.github.io/xiaomi/index.html" target="_blank" class=" mybtn" role="" style="width: 80%;">查看详情</a> </p>
+				<div class="section " id="section0">
+					<div class="container fadeOutLeft animated_other">
+						<div class="row">
+							<div class="col-sm-4 col-md-4 row1" >
+								<div class="thumbnail" style="border: none; border-radius: 0;">
+									<img src="images/20180928174501.png" width="100%">
+									<div class="caption">
+										<h3>天气APP</h3>
+										<p style="color: #8C8C8C;">查看当地、全国天气信息</p>
+										<p>
+											<a href="https://wnannan.github.io/tenweather/index.html" target="_blank" class=" mybtn" role="" style="width: 80%;">查看详情</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-4 row2" >
+								<div class="thumbnail" style="border: none; border-radius: 0;">
+									<img src="images/top.jpg" width="100%">
+									<div class="caption">
+										<h3>移动端页面</h3>
+										<p style="color: #8C8C8C;">一个关于天气，一个关于美食，在一个刚好的天气去品尝美味的食物</p>
+										<!-- <p>
+											<a href="https://wnannan.github.io/suxinhuahui/" target="_blank" class=" mybtn" role="" style="width: 80%;">查看详情</a>
+										</p> -->
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-4 row3" >
+								<div class="thumbnail" style="border: none; border-radius: 0;">
+									<img src="images/APP.png" width="100%">
+									<div class="caption">
+										<h3>外卖APP</h3>
+										<p style="color: #8C8C8C;">一个专注外卖的APP</p>
+										<p>
+											<a href="https://wnannan.github.io/APP/index.html" target="_blank" class=" mybtn" role="" style="width: 80%;">查看详情</a>
+										</p>
 
       </div>
 
@@ -393,22 +201,26 @@
 			<div class="intro fadeOutUpBig animated">
 
 			
-
-				<div class="slide" id="slide1"><h1>学习经历</h1>
+				
+				<div class="slide" id="slide1"><h1><a href="https://wnannan.github.io/xiaomi/" target="_blank" style="color: #fff">小米首页</a></h1>
 
 				<p >
 
-					大学期间努力学习，课余时间，除参加活动以外，经常和朋友讨论本专业的话题，从中学习到很多知识。<br>
+					小米商城首页
 
 
 				</p></div>
 
-		        <div class="slide" id="slide2"><h1>工作经历</h1>
+		        <div class="slide" id="slide2"><h1><a href="https://wnannan.github.io/suxinhuahui/index.html" target="_blank" style="color: #fff">素馨花卉</a></h1>
+
+				<p >
+					素馨花卉，一个关于花卉的网站
+				</p></div>
+				<div class="slide" id="slide3"><h1><a href="https://wnannan.github.io/bdnews/index.html" target="_blank" style="color: #fff">百度新闻</a></h1>
 
 				<p >
 
-					本人工作经验已有X年，现熟练掌握的技能有HTML+CSS，JS，JQuery，PHP等技术
-
+					百度新闻首页
 
 
 				</p></div>
@@ -460,25 +272,18 @@
         <h3 style="color: #FFFFFF;">一切皆为优质工作</h3>
 
         <p style="color: #FFFFFF;text-align: left;">
-
-        	
         	如果能帮助您更好的工作，我将深感欣慰。<br>在工作中认真负责，善于沟通、协调有较强的组织能力与团队精神；<br>活泼开朗、乐观上进、有爱心并善于施教并行；<br>上进心强、勤于学习能不断提高自身的能力与综合素质。<br>在未来的工作中，我将以充沛的精力，刻苦钻研的精神来努力工作，稳定地提高自己的工作能力，与企业同步发展。<br>
-        	通过下方联系方式，找到我
-       
+        	通过下方联系方式，找到我     
         </p>
-
       <p style="margin-top: 15px;">
-
       	<a href="#" class="btn btn-default butt" role="button" style="margin-right: 10px;">
 
-      		<!-- <i class="font-face fa-group fa-2x" ></i> -->
       		<i class="iconfont icon-shejiao"></i>
 
       	</a> 
 
       	<a href="#" class="btn btn-default butt" role="button" style="margin-right: 10px;">
 
-      		<!-- <i class="fa fa-wechat fa-2x" ></i> -->
 
       		<i class="iconfont icon-weixin"></i>
 
@@ -489,7 +294,6 @@
       		
       		<i class="iconfont icon-weibo"></i>
 
-      		<!-- <i class="fa fa-weibo fa-2x" ></i> -->
 
       	</a> 
 
@@ -498,7 +302,6 @@
       		
       		<i class="iconfont icon-QQ"></i>
 
-      		<!-- <i class="fa fa-qq fa-2x" ></i> -->
 
       	</a>
 
@@ -742,11 +545,6 @@
 	}
 
 }
-	
-	
-	
-
-
 	</script>
 
 	</body>
